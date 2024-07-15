@@ -1,0 +1,163 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    background-image: url('../img/Backg.gif'); 
+    background-size: 200%;
+    background-position: center;
+    
+}
+@media (max-width: 600px) {
+
+}
+header {
+background-image: url('../img/76.png');
+    background-size: cover; 
+    background-position: center; 
+    color: #fff;
+    padding: 50px 0; 
+    text-align: center;
+    font-family: 'Unquiet Spirits(RUS BY LYAJKA)', sans-serif; 
+    position: relative;
+}
+
+header h1 {
+    font-size: 72px; /* Увеличение размера текста */
+    text-shadow: 5px 5px 0px rgba(0,0,0,0.2), 10px 10px 0px rgba(0,0,0,0.1); 
+    position: relative;
+}
+
+header h1::after {
+    content: attr(data-shadow);
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    color: rgba(0,0,0,0.2);
+    z-index: -1;
+    transform: rotateX(45deg);
+    transform-origin: top;
+    perspective: 100px;
+}
+
+nav {
+    background-color: #444;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+    position: relative;
+    z-index: 2;
+}
+
+nav a {
+    color: #fff;
+    margin: 0 10px;
+    text-decoration: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+    position: relative;
+    z-index: 2;
+}
+
+nav a::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.2);
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+    border-radius: 8px;
+    z-index: 1;
+    display: none; /* Скрываем по умолчанию */
+}
+
+#menu::before {
+    display: block; /* Показываем только для элемента с id="menu" */
+}
+
+nav a:hover {
+    background-color: #666;
+}
+.container {
+    width: 80%;
+    margin: 20px auto;
+    background-color: #fff;
+    padding: 20px;
+    box-shadow: 10px 0 10px rgba(0, 0, 0, 0.1); 
+    background-size: cover;
+    background-position: center;
+    border: 5px solid #DCDCDC;
+    border-radius: 10px;
+}
+.container1 {
+    width: 80%;
+    margin: 20px auto;
+    background-color: #fff;
+    padding: 20px;
+    box-shadow: 10px 0 10px rgba(0, 0, 0, 0.1); 
+    background-image: url('../img/81.png');
+    background-size: cover;
+    background-position: center;
+    border: 5px solid #FF0000;
+    border-radius: 10px;
+}
+    .bottom-left {
+        position: absolute;
+        right: 120px;
+        color: white;
+        font-size: 14px;
+        background-color: rgba(0, 0, 0, 0.5);
+        padding: 5px 10px;
+        border-radius: 5px;
+    }
+.footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+.parallax {
+    background-image: url('../img/79.png');
+    height: 400px; 
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.post {
+    display: flex;
+    align-items: stretch; 
+    margin-bottom: 20px;
+
+}
+
+.post img {
+    width: 150px;
+    height: auto; 
+    object-fit: cover; 
+    margin-right: 20px;
+    border: 5px solid #ddd; 
+    border-radius: 10px; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+}
+
+
+.post-content {
+    flex: 1;
+}
+
+.post h2 {
+    margin-bottom: 10px; /* Отступ между заголовком и текстом */
+    color: #333;
+}
+
+
+
